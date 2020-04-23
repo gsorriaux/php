@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    margin: 10px 0;
+}
+
+header ul {
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+header li {
+    border: 1px solid black;
+}
