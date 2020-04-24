@@ -46,21 +46,53 @@ $arr = [
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <title>PHP</title>
+    <link rel="stylesheet" href="css/users.css">
+    <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>It-Gaming | Personnages</title>
 </head>
 <body>
     <?php require 'templates/header.php' ?>
-    <h1>Mes utilisateurs</h1>
-    <table>
-        <?php foreach ($arr as $user) {
-            echo "<tr>";
-            echo "<td class='column'>{$user['name']}</td>";
-            echo "<td class='column'>{$user['age']}</td>";
-            echo "<td class='column'>{$user['passion']}</td>";
-            echo "</tr>";
-        } ?>
-    </table>
-    <table>
+    <main class="flex">
+        <h1>Mes personnages</h1>   
+        <div class="character flex">
+            <div class="flex">
+                <p class="character-description">The True Hero</p>
+            </div>
+            <div class="flex">
+                <p class="character-name">Zack</p>
+            </div>
+            <div class="flex">
+                <img class="character-img" src="/img/zack2.jpeg" alt="">
+            </div>
+        </div>
+        <div class="character flex">
+            <div class="flex">
+                <p class="character-description">Le meilleur de deux peuples</p>
+            </div>
+            <div class="flex">
+                <p class="character-name">Terra</p>
+            </div>
+            <div class="flex">
+                <img class="character-img" src="/img/terra.png" alt="">
+            </div>
+        </div>   
+        <div class="character flex">
+            <div class="flex">
+                <p class="character-description">Vaillante Générale</p>
+            </div>
+            <div class="flex">
+                <p class="character-name">Beatrix</p>
+            </div>
+            <div class="flex">
+                <img class="character-img" src="/img/beat.jpeg" alt="">
+            </div>
+        </div>
+    </main>
+    <?php require 'templates/footer.php' ?>
+    
+       
+
+        <!-- <table>
         <?php foreach ($arr as $user): ?>
             <tr>
                 <td class="column"><?= $user['name'] ?></td>
@@ -68,6 +100,6 @@ $arr = [
                 <td class="column"><?= $user['passion'] ?></td>
             </tr>
         <?php endforeach ?>
-    </table>
+    </table> -->
 </body>
 </html>
