@@ -9,7 +9,7 @@
                 <li class="drop">
                     <span><?= ucfirst($_SESSION['name']) ?></span>
                     <ul class="none">
-                        <li class="flex"><a href="#">Profil</a></li>
+                        <li class="flex"><a href="profil.php">Profil</a></li>
                         <li class="flex"><a href="controllers/logout.php">Déco</a></li>
                     </ul>    
                 </li>
