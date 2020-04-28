@@ -10,16 +10,17 @@
     <main>
         <form action="controllers/preferences.php" method="POST">
             <p>Afficher le texte ?</p>
-            <label for="">Oui</label>
-            <input type="radio" name="text" value="1" checked>
-            <label for="">Non</label>
-            <input type="radio" name="text" value="0"><br>
-            
-            <p>Afficher l'image' ?</p>
-            <label for="">Oui</label>
-            <input type="radio" name="image" value="1" checked>
-            <label for="">Non</label>
-            <input type="radio" name="image" value="0"><br>
+
+            <label for="text">Oui</label>
+            <input type="radio" name="text" value="1" <?= $_SESSION['text'] ? 'checked' : '' ?>>
+            <label for="">Non</label>²
+            <input type="radio" name="text" value="0" <?= !$_SESSION['text'] ? 'checked' : '' ?>><br>
+
+            <p>Afficher l'image ?</p>
+            <label for="image">Oui</label>
+            <input type="radio" name="image" value="1" <?= $_SESSION['img'] ? 'checked' : '' ?>>
+            <label for="image">Non</label>
+            <input type="radio" name="image" value="0" <?= !$_SESSION['img'] ? 'checked' : '' ?>><br>
 
             <input type="submit" value="Envoyer!">
         </form>

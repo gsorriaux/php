@@ -40,8 +40,12 @@ Si les mauvais log sont entrés, rebasculer sur la page de connexion.
 ## Exo 4 bis
 Lorsque l'on rebascule sur la page de connexion suite à des mauvais logs, ça nous affiche tout de même le nom que l'on avait entré.
 
+## Exo 5
+- Réflexion sur les mots de passes (qu'est-ce qu'un bon mot de passe, méthode pour cracker un compte)
+- (x) Différence entre hashage, cryptage et encodage.
+- (x) Qu'est-ce qu'un grain de sel (salt)?
+
+
 
 ## Idées : 
-- Salt
 - JS pour double mot de passe
-- 
