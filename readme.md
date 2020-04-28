@@ -29,9 +29,19 @@ Ainsi, il pourra choisir d'afficher ou non, et l'image et le texte de la page __
 >  - Déconnexion (1)
 >  - Profil (3)
 
+
+## Exo 3bis
+Faire en sorte que les options d'affichages restent selectionnées.
+
 ## Exo 4
 Ajouter un "vrai" système de connexion. Il faudra donc le bon login avec le bon mot de passe pour se connecter.
 Si les mauvais log sont entrés, rebasculer sur la page de connexion.
 
 ## Exo 4 bis
 Lorsque l'on rebascule sur la page de connexion suite à des mauvais logs, ça nous affiche tout de même le nom que l'on avait entré.
+
+
+## Idées : 
+- Salt
+- JS pour double mot de passe
+- 
