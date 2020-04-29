@@ -10,10 +10,16 @@
 <body>
     <?php require 'templates/header.php' ?>
     <main class="flex">
+        <?php if (isset($_SESSION['twice'])): ?>
+            <div>
+                <p class="wrong-login">Mauvais login ou mot de passe</p>
+            </div>
+        <?php endif ?>
+
         <form action="controllers/connection.php" method="POST">
             <div>
                 <label for="name">Prénom :</label>
-                <input type="text" placeholder="Votre prénom" name="name" value="jon">
+                <input type="text" name="name" value="<?= isset($_SESSION['twice']) ? $_SESSION['twice'] : '' ?>">
             </div>
             <div>
                 <label for="password">Mot de passe : </label>
@@ -23,5 +29,6 @@
         </form>
     </main>
     <?php require 'templates/footer.php' ?>
+    <?php session_destroy() ?>
 </body>
 </html>
